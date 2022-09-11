@@ -17,6 +17,7 @@ const Header = () => {
   return (
     <header className="h-[124px] bg-[#fff] dark:bg-[#2b2e33] border-b-[1px] border-[#949494] dark:border-[#ECECEC]">
       <div className="flex max-w-[1440px] mx-auto h-full">
+        {/* start logo link */}
         <Link href="/">
           <a className="flex gap-2 items-center ">
             <Image
@@ -30,7 +31,7 @@ const Header = () => {
             <p className="text-3xl font-bold">Нейрон</p>
           </a>
         </Link>
-        {/* /start search input */}
+        {/* /end search input */}
         <form
           action=""
           className="h-[70px] w-[450px] my-auto flex items-center justify-between bg-[#E7E7E7] rounded-xl ml-16 py-2 pr-5 pl-2 text-xl dark:bg-[#373A42] border-2 border-[#949494] dark:border-[#838383]"
@@ -54,6 +55,8 @@ const Header = () => {
           </button>
         </form>
         {/* /end search input */}
+        {/* start button for switch theme */}
+
         <button
           className={`ml-auto  my-auto w-[50px] h-[50px]  bg-[#E7E7E7] dark:bg-[#3C434E] rounded-full relative overflow-hidden`}
           onClick={() => {
@@ -132,7 +135,7 @@ const Header = () => {
                   bottom: `0%`,
                   transform: `translateX(-50%) translateY(100%)`,
                 }}
-                transition={{ }}
+                transition={{}}
               >
                 <FutureImage
                   src={`/icons/sun.svg`}
@@ -144,6 +147,7 @@ const Header = () => {
             </>
           )}
         </button>
+        {/* end button for switch theme */}
       </div>
     </header>
   );
